@@ -1,0 +1,20 @@
+=== PRIME-HILBERT TRADING AGENT DEMO ===
+
+Running ecology with 3 guilds processing synthetic BTCUSDT bars...
+
+
+> prime-hilbert-trader@0.1.0 start
+> node dist/index.js
+
+Run complete. Final position: { ts: 0, qty: 0, avg_px: 0, unreal: 0, real: 0, drawdown: 0 }
+Bars processed: 341
+Guild phases:
+  g-fast: { meanLength: 1, phases: { '2': 0, '3': 0, '5': 0, '7': 0, '11': 0 } }
+  g-mid: {
+  meanLength: 1,
+  phases: { '3': 0, '5': 0, '7': 0, '11': 0, '13': 0, '17': 0 }
+}
+  g-swing: {
+  meanLength: 1,
+  phases: { '5': 0, '7': 0, '11': 0, '13': 0, '17': 0, '19': 0, '23': 0 }
+}
