@@ -73,14 +73,14 @@ Per design.md Algorithm 2, the system:
 5. **Two-Stage Evaluation**: 
    - Proxy: Fast edge estimate vs impact
    - Objective: Full P&L calculation with fills
-6. **Fitness Calculation**: Computes F = λ₁LZ² + λ₂max(LZ) + λ₃coh + λ₄(Hmax-Hint)
+6. **Fitness Calculation**: Computes F = λ₁·LZ² + λ₂·max(LZ) + λ₃·coh + λ₄·(Hmax-Hint)
 7. **Phase Update**: Updates guild φ from elite residues via EMA
 8. **Reproduction**: Periodic elite selection + mutation to form next generation
 
 ## Metrics
 
 The system tracks:
-- **Per-bar**: P&L, position, turnover, fill ratio, slippage, φ summary, Hilbert entropy, coherence, fitness
+- **Per-bar**: P&L, position, turnover, fill ratio, slippage, φ summary (phase vector concentration), Hilbert entropy (internal observer entropy), coherence (guild coordination measure), fitness
 - **Per-epoch**: Sharpe, Sortino, max drawdown, hit rate, average adverse excursion
 
 ## Testing
