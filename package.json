@@ -1,0 +1,21 @@
+{
+  "name": "prime-hilbert-trader",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node --files src/index.ts",
+    "build": "tsc -p .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.9"
+  }
+}
